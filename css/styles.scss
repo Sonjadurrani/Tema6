@@ -19,49 +19,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "bootstrapComponents";
 
-.news-block {
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.news-block:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
-}
-
-.news-block .bg-image {
-  position: relative;
-}
-
-.news-block .bg-image img {
-  width: 100%;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-.news-block:hover .bg-image img {
-  transform: scale(1.05);
-}
-
-.news-block .mask {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(var(--bs-secondary-rgb), 0.15);
-  transition: background-color 0.3s ease;
-}
-
-.news-block:hover .mask {
-  background-color: rgba(var(--bs-secondary-rgb), 0.25);
-}
-
-.bg-image img.hover-zoom {
-  transition: transform 0.35s ease;
-}
-
-.bg-image:hover img.hover-zoom {
-  transform: scale(1.05);
-}
 
 
 
@@ -150,4 +107,114 @@ code {
   border-color: rgba(255, 255, 255, 0.3);
   color: white;
   box-shadow: none;
+}
+
+
+h1 {
+ font-family: "Archivo Black", sans-serif;
+}
+
+h2 {
+ font-family: "Archivo Black", sans-serif;
+}
+
+
+h3 {
+ font-family: "Archivo Black", sans-serif;
+}
+
+h4 {
+ font-family: "Archivo Black", sans-serif;
+}
+
+p{
+
+   font-family: "Inter", sans-serif;
+}
+
+.text-center h1 {
+    font-family: "Archivo Black", sans-serif !important;
+}
+
+/* Nyheder - hover effekt på billeder uden border-radius */
+.news-block {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+/* Billeder */
+.news-block .bg-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 !important; /* fjerner alle hjørner */
+}
+
+.news-block .bg-image img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+  border-radius: 0 !important; /* fjerner evt. rounding på selve img */
+}
+
+.news-block:hover .bg-image img {
+  transform: scale(1.05);
+}
+
+/* Overlay */
+.news-block .mask {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(var(--bs-secondary-rgb), 0.15); /* bg-secondary med 15% opacity */
+  transition: background-color 0.3s ease;
+  border-radius: 0 !important; /* sikrer overlay ikke har hjørner */
+}
+
+.news-block:hover .mask {
+  background-color: rgba(var(--bs-secondary-rgb), 0.25); /* mørkere ved hover */
+}
+
+
+
+/* Sørger for, at billederne ikke zoomer */
+.card-img-top {
+  transition: all 0.3s ease;
+}
+
+/* Tilføj overlay container */
+.card:hover::after {
+  content: "\f061"; /* Font Awesome pil (skal have font-awesome inkluderet) */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #fff;
+  opacity: 1;
+}
+
+/* Overlay baggrund */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 76%;
+  background-color: rgba(85, 134, 250, 0); /* start gennemsigtig */
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+/* Hover baggrund */
+.card:hover::before {
+  background-color: rgba(163, 248, 134, 0.27); /* sekundær farve med opacity */
 }
