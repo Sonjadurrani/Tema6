@@ -3,6 +3,8 @@
 
 // 2. Include any default variable overrides here
 $link-decoration: none;
+$primary: #99B6C8;
+$secondary: #4D5763;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
@@ -10,11 +12,205 @@ $link-decoration: none;
 
 // 4. Include any default map overrides here
 $custom-colors: (
-	"farve": $cyan-400,
+        "farve": $cyan-400,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "bootstrapComponents";
 
-// 5. Du kan lave styling her...
+
+
+
+
+
+
+
+
+
+.megamenu {
+  position: static;
+}
+
+.megamenu .dropdown-menu {
+  background: none;
+  border: none;
+  width: 100%;
+}
+
+
+
+
+code {
+  color: #745eb1;
+  background: #fff;
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.2rem;
+}
+
+.text-uppercase {
+  letter-spacing: 0.08em;
+}
+
+
+/* Mega menu dropdown links */
+.navbar .dropdown-menu a {
+  color: #4D5763 !important; /* din secondary farve */
+}
+
+.navbar .dropdown-menu a:hover,
+.navbar .dropdown-menu a:focus {
+  color: #33373a !important; /* evt. hvid på hover */
+}
+
+
+
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+.newsletter-input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.newsletter-input:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  box-shadow: none;
+}
+
+
+h1 {
+  font-family: "Archivo Black", sans-serif;
+}
+
+h2 {
+  font-family: "Archivo Black", sans-serif;
+}
+
+
+h3 {
+  font-family: "Archivo Black", sans-serif;
+}
+
+h4 {
+  font-family: "Archivo Black", sans-serif;
+}
+
+p{
+
+  font-family: "Inter", sans-serif;
+}
+
+.text-center h1 {
+  font-family: "Archivo Black", sans-serif !important;
+}
+
+/* Nyheder - hover effekt på billeder uden border-radius */
+.news-block {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+/* Billeder */
+.news-block .bg-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 !important; /* fjerner alle hjørner */
+}
+
+.news-block .bg-image img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+  border-radius: 0 !important; /* fjerner evt. rounding på selve img */
+}
+
+.news-block:hover .bg-image img {
+  transform: scale(1.05);
+}
+
+/* Overlay */
+.news-block .mask {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(var(--bs-secondary-rgb), 0.15); /* bg-secondary med 15% opacity */
+  transition: background-color 0.3s ease;
+  border-radius: 0 !important; /* sikrer overlay ikke har hjørner */
+}
+
+.news-block:hover .mask {
+  background-color: rgba(var(--bs-secondary-rgb), 0.25); /* mørkere ved hover */
+}
+
+
+
+/* Sørger for, at billederne ikke zoomer */
+.card-img-top {
+  transition: all 0.3s ease;
+}
+
+/* Tilføj overlay container */
+.card:hover::after {
+  content: "\f061"; /* Font Awesome pil (skal have font-awesome inkluderet) */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #fff;
+  opacity: 1;
+}
+
+/* Overlay baggrund */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 76%;
+  background-color: rgba(85, 134, 250, 0); /* start gennemsigtig */
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
