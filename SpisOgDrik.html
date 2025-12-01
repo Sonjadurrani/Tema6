@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="da">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test - ens billedhøjde</title>
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap (må ligge før din CSS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Inline CSS (ligger EFTER Bootstrap, så det ikke overskrives) -->
+    <style>
+        body { font-family: Arial, sans-serif; background:#fafafa; padding:20px; }
+
+        /* Ens højde på billederne — samme højde som Konditoriet: 260px */
+        .card-img-top {
+            height: 260px !important;    /* !important kun til fejlsøgning - fjern senere */
+            width: 100% !important;
+            object-fit: cover !important;
+            display: block;
+        }
+
+        .card { border-radius:6px; }
+        .card-body h4 { font-size:1.2rem; font-weight:700; }
+        .btn { font-weight:600; border-radius:30px; }
+    </style>
+</head>
+<body>
+
+<!--- Det her er bare indtil jeg får headeren og nav baren --->
+<div class="TykStreg"></div>
+
+
+
+<!--- Dette er de 4 kort til spisesteder --->
+<div class="container py-4">
+    <div class="row g-4">
+
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+                <img src="images/konditori.jpg" class="card-img-top" alt="konditori">
+                <div class="card-body">
+                    <h4>Konditoriet</h4>
+                    <p>Her kan du nyde friskbagt brød...</p>
+                    <a class="btn btn-outline-dark">Læs mere her</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+                <img src="images/cupsindefra.jpg" class="card-img-top" alt="cafe">
+                <div class="card-body">
+                    <h4>Cafe Cups `n cones</h4>
+                    <p>Her kan du nyde alt fra frisksmurte sandwich...</p>
+                    <a class="btn btn-outline-dark">Læs mere her</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ekstra kort for test -->
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+                <img src="images/krea.jpg" class="card-img-top" alt="fafla">
+                <div class="card-body">
+                    <h4>Fafla Mikroværksted</h4>
+                    <p>Beskrivelse...</p>
+                    <a class="btn btn-outline-dark">Læs mere her</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+                <img src="images/lolli.jpg" class="card-img-top" alt="lollipop">
+                <div class="card-body">
+                    <h4>Lollipop</h4>
+                    <p>Beskrivelse...</p>
+                    <a class="btn btn-outline-dark">Læs mere her</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+</body>
+</html>
