@@ -26,6 +26,18 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 
 
+:root {
+  --bs-primary: #a9c4d6; /* din primary-farve */
+}
+
+.custom-primary-btn {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+  color: white !important;
+  padding: 10px 24px;
+  border-radius: 25px; /* gør den rund som på billedet */
+  font-weight: 600;
+}
 
 
 .megamenu {
@@ -214,3 +226,13 @@ p{
   z-index: 1;
 }
 
+.match-btn {
+  margin-top: 1rem;      /* samme afstand som i card-body */
+  border-radius: .375rem; /* Bootstrap standard (samme som i kortet) */
+}
+
+
+.btn {
+  border-radius: 0.375rem !important;
+  font-weight: 600;
+}
