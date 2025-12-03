@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
+  <title>Forside</title>
+  <meta name="robots" content="All">
+  <meta name="author" content="Udgiver">
+  <meta name="copyright" content="Information om copyright">
 
-	<title>Forside</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-	<meta name="robots" content="All">
-	<meta name="author" content="Udgiver">
-	<meta name="copyright" content="Information om copyright">
+  <!-- Egen CSS -->
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-	<link href="css/styles.css" rel="stylesheet" type="text/css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS -->
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
 
+  <!-- Responsivt viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
 
-<!-- navbar -->
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3 shadow-sm ">
-  <!-- Logo + tekst helt til venstre -->
+<!-- Navbar start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3 shadow-sm">
+  <!-- Logo -->
   <a href="#" class="navbar-brand d-flex align-items-center ms-4">
     <img src="images/LOGO.png" alt="Oplev Køge" width="150" height="80" class="me-2">
-
   </a>
 
   <!-- Hamburger menu til mobil -->
-  <button class="navbar-toggler" type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarContent"
-          aria-controls="navbarContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -50,34 +49,26 @@
 
       <!-- Mega Menu dropdown -->
       <li class="nav-item dropdown megamenu">
-        <a id="megamenu"
-           href="#"
-           class="nav-link dropdown-toggle font-weight-bold text-uppercase fw-bold"
-           data-bs-toggle="dropdown"
-           aria-expanded="false">
-          MENU
-        </a>
-
-        <div class="dropdown-menu border-0 p-0 m-0 " aria-labelledby="megamenu">
+        <a id="megamenu" href="#" class="nav-link dropdown-toggle fw-bold text-uppercase" data-bs-toggle="dropdown" aria-expanded="false">MENU</a>
+        <div class="dropdown-menu border-0 p-0 m-0" aria-labelledby="megamenu">
           <div class="container">
             <div class="row bg-white rounded-0 m-0 shadow-sm">
 
+              <!-- Mega Menu indhold venstre -->
               <div class="col-lg-7 col-xl-8">
                 <div class="p-4">
                   <div class="row">
-
                     <div class="col-lg-6 mb-4">
-                      <h6 class="font-weight-bold text-uppercase">OPLEVELSER</h6>
+                      <h6 class="fw-bold text-uppercase">OPLEVELSER</h6>
                       <ul class="list-unstyled">
                         <li><a href="#" class="nav-link text-small pb-0">Natur & Strande</a></li>
                         <li><a href="#" class="nav-link text-small pb-0">Indendørs Aktiviteter</a></li>
-                        <li><a href="#" class="nav-link text-small pb-0">Familievenlige Attraktioner</a></li>
+                        <li><a href="attraktioner.html" class="nav-link text-small pb-0">Familievenlige Attraktioner</a></li>
                         <li><a href="#" class="nav-link text-small pb-0">Legepladser</a></li>
                       </ul>
                     </div>
-
                     <div class="col-lg-6 mb-4">
-                      <h6 class="font-weight-bold text-uppercase">SPIS & DRIK</h6>
+                      <h6 class="fw-bold text-uppercase">SPIS & DRIK</h6>
                       <ul class="list-unstyled">
                         <li><a href="#" class="nav-link text-small pb-0">Børnevenlige Restauranter</a></li>
                         <li><a href="#" class="nav-link text-small pb-0">Børnemenuer</a></li>
@@ -85,9 +76,8 @@
                         <li><a href="#" class="nav-link text-small pb-0">Is & Snacks</a></li>
                       </ul>
                     </div>
-
                     <div class="col-lg-6 mb-4">
-                      <h6 class="font-weight-bold text-uppercase">PRAKTISK INFO</h6>
+                      <h6 class="fw-bold text-uppercase">PRAKTISK INFO</h6>
                       <ul class="list-unstyled">
                         <li><a href="#" class="nav-link text-small pb-0">Åbningstider & Links</a></li>
                         <li><a href="#" class="nav-link text-small pb-0">Familievenlige Tips</a></li>
@@ -95,9 +85,8 @@
                         <li><a href="#" class="nav-link text-small pb-0">Offentlig Transport</a></li>
                       </ul>
                     </div>
-
                     <div class="col-lg-6 mb-4">
-                      <h6 class="font-weight-bold text-uppercase">Kort</h6>
+                      <h6 class="fw-bold text-uppercase">Kort</h6>
                       <ul class="list-unstyled">
                         <li><a href="#" class="nav-link text-small pb-0">Spisesteder</a></li>
                         <li><a href="#" class="nav-link text-small pb-0">Parkering</a></li>
@@ -105,15 +94,12 @@
                         <li><a href="#" class="nav-link text-small pb-0">Toiletter</a></li>
                       </ul>
                     </div>
-
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block"
-                   style="background: center center url('images/dan-gold-E6HjQaB7UEA-unsplash.jpg') no-repeat;
-            background-size: cover;">
-              </div>
+              <!-- Mega Menu billede højre -->
+              <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block" style="background: center center url('images/dan-gold-E6HjQaB7UEA-unsplash.jpg') no-repeat; background-size: cover;"></div>
 
             </div>
           </div>
@@ -123,67 +109,55 @@
     </ul>
   </div>
 </nav>
+<!-- Navbar slut -->
 
-
-<!-- Hero Section -->
+<!-- Hero sektion start -->
 <section class="border-bottom pb-4 mb-5">
-<div class="position-relative text-white d-flex align-items-center justify-content-center"
-     style="height: 500px; background-image: url('images/køge.JPEG'); background-size: cover; background-position: center 53%; border-radius: 0;">
-
-  <!-- Overlay -->
-  <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
-
-  <!-- Hero Text -->
-  <div class="position-relative text-center">
-    <h1 class="fw-bold mb-3">OPLEV KØGE</h1>
-    <h4 class="mb-4">Find aktiviteter til hele familien</h4>
-    <a href="#" class="btn btn-light btn-lg">Læs mere</a>
+  <div class="position-relative text-white d-flex align-items-center justify-content-center" style="height: 500px; background-image: url('images/Designer-2-kopi.png'); background-size: cover; background-position: center 53%; border-radius: 0;">
+    <!-- Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+    <!-- Hero tekst -->
+    <div class="position-relative text-center">
+      <h1 class="fw-bold mb-3">OPLEV KØGE</h1>
+      <h4 class="mb-4">Find aktiviteter til hele familien</h4>
+      <a href="#" class="btn btn-light btn-lg">Læs mere</a>
+    </div>
   </div>
-</div>
 </section>
+<!-- Hero sektion slut -->
 
-
-
-
+<!-- Velkomst tekst start -->
 <section class="text-center m-5">
-
-  <h1 class="mb-3"> Velkommen til Køge - Hele familiens guide til sjove oplevelser</h1>
-
-  <p class="mb-5"> Køge er en af Sjællands hyggeligste kystbyer, hvor historie, natur og familievenlige aktiviteter mødes på den helt rigtige måde. Her finder du alt fra smukke strande og grønne områder til spændende kulturelle oplevelser og børnevenlige arrangementer året rundt.
-    Uanset om I er til leg i naturen, kreative værksteder, gåture i den gamle bymidte eller hyggelige cafébesøg, har Køge noget for jer. Byen er overskuelig, tryg og fyldt med steder, hvor børn kan udforske, lære og lege – og hvor voksne samtidig kan nyde en afslappet dag. Køge er kort sagt et sted, hvor hele familien kan være med, og hvor gode minder skabes i et miljø fyldt med charme, nærvær og lokale oplevelser. Velkommen til en by, der både overrasker, inspirerer og inviterer til kvalitetstid – uanset årstid.</p>
-
+  <h1 class="mb-3 text-secondary">Velkommen til Køge - Hele familiens guide til sjove oplevelser</h1>
+  <p class="mb-5 text-secondary">
+    Køge er en af Sjællands hyggeligste kystbyer, hvor historie, natur og familievenlige aktiviteter mødes på den helt rigtige måde. Her finder du alt fra smukke strande og grønne områder til spændende kulturelle oplevelser og børnevenlige arrangementer året rundt.
+    Uanset om I er til leg i naturen, kreative værksteder, gåture i den gamle bymidte eller hyggelige cafébesøg, har Køge noget for jer. Byen er overskuelig, tryg og fyldt med steder, hvor børn kan udforske, lære og lege – og hvor voksne samtidig kan nyde en afslappet dag. Køge er kort sagt et sted, hvor hele familien kan være med, og hvor gode minder skabes i et miljø fyldt med charme, nærvær og lokale oplevelser. Velkommen til en by, der både overrasker, inspirerer og inviterer til kvalitetstid – uanset årstid.
+  </p>
 </section>
+<!-- Velkomst tekst slut -->
 
-
-
-
-
-
-
-<!--Section: Content med bg-secondary og hover-effekt-->
-<section class="bg-light  mb-5 py-5">
+<!-- Familievenlige attraktioner start -->
+<section class="bg-light mb-5 py-5">
   <div class="container">
     <!-- Overskrift -->
     <div class="row">
       <div class="col-12 text-center mb-4">
-        <h4 class="text-black">UDFORSK FAMILIE VENLIGE ATTRAKTIONER</h4>
+        <h4 class="text-secondary">UDFORSK FAMILIE VENLIGE ATTRAKTIONER</h4>
       </div>
     </div>
-
     <div class="row gx-4 gy-4">
-
       <!-- News Block 1 -->
       <div class="col-12 col-md-6 col-lg-3">
-        <div class="news-block  shadow-1-strong rounded-5 p-3">
+        <div class="news-block shadow-1-strong rounded-5 p-3">
           <div class="bg-image mb-4">
-            <img src="images/keramik1.jpeg" class="img-fluid" />
+            <img src="images/keramik1.jpeg" class="img-fluid"  alt=" keramik værksted"/>
             <div class="mask"></div>
           </div>
           <div class="row mb-3">
             <div class="col-6"><a href="" class="text-success"><i class="fa-solid fa-pen-fancy"></i> Kreativitet</a></div>
             <div class="col-6 text-end"></div>
           </div>
-          <a href="" class="text-dark">
+          <a href="" class="text-secondary">
             <h5>Keramikmikroværkstedet Fafla</h5>
             <p>Fafla er et lille, hyggeligt keramikværksted midt i Køge, hvor kreativitet og fællesskab mødes.</p>
           </a>
@@ -194,14 +168,14 @@
       <div class="col-12 col-md-6 col-lg-3">
         <div class="news-block shadow-1-strong rounded-5 p-3">
           <div class="bg-image mb-4">
-            <img src="images/torv5.jpg" class="img-fluid" />
+            <img src="images/torv5.jpg" class="img-fluid"  alt="køge torv"/>
             <div class="mask"></div>
           </div>
           <div class="row mb-3">
             <div class="col-6"><a href="" class="text-warning"><i class="fa-solid fa-star"></i> Hyggeligt </a></div>
             <div class="col-6 text-end"></div>
           </div>
-          <a href="" class="text-dark">
+          <a href="" class="text-secondary">
             <h5>Torvemarkeder på Køge Torv</h5>
             <p>Hver uge udstråler torvet af liv, når torvemarkedet åbner med friske råvarer, blomster og boder.</p>
           </a>
@@ -210,18 +184,18 @@
 
       <!-- News Block 3 -->
       <div class="col-12 col-md-6 col-lg-3">
-        <div class="news-block  shadow-1-strong rounded-5 p-3">
+        <div class="news-block shadow-1-strong rounded-5 p-3">
           <div class="bg-image mb-4">
-            <img src="images/legeplads1.JPEG" class="img-fluid" />
+            <img src="images/legeplads1.JPEG" class="img-fluid"  alt="legeplads"/>
             <div class="mask"></div>
           </div>
           <div class="row mb-3">
-            <div class="col-6"><a href="" class="text-info"><i class="fa-solid fa-face-smile"></i> Travels</a></div>
+            <div class="col-6"><a href="" class="text-info"><i class="fa-solid fa-face-smile"></i> Energisk</a></div>
             <div class="col-6 text-end"></div>
           </div>
-          <a href="" class="text-dark">
+          <a href="" class="text-secondary">
             <h5>Mini-legeplads i Køge</h5>
-            <p>En hyggelig legeplads med trampolin og klatrestativ. Et oplagt sted for børn til at slå sig løs, mens forældre nyder en kop kaffe</p>
+            <p>En hyggelig legeplads med trampolin og klatrestativ. Et oplagt sted for børn til at slå sig løs, mens forældre nyder en kop kaffe.</p>
           </a>
         </div>
       </div>
@@ -230,15 +204,14 @@
       <div class="col-12 col-md-6 col-lg-3">
         <div class="news-block shadow-1-strong rounded-5 p-3">
           <div class="bg-image mb-4">
-            <img src="images/bib2.jpeg" class="img-fluid" />
+            <img src="images/bib2.jpeg" class="img-fluid"  alt="køge bibliotek"/>
             <div class="mask"></div>
           </div>
           <div class="row mb-3">
-
             <div class="col-6"><a href="" class="text-danger"><i class="fa-solid fa-book"></i> Lærerigt</a></div>
             <div class="col-6 text-end"></div>
           </div>
-          <a href="" class="text-dark">
+          <a href="" class="text-secondary">
             <h5>Køge Bibliotek</h5>
             <p>Køge Bibliotek byder på oplevelser for både børn og voksne! Deltag i læseevents, kreative workshops og spændende fortællinger.</p>
           </a>
@@ -248,50 +221,23 @@
     </div>
   </div>
 </section>
+<!-- Familievenlige attraktioner slut -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--Section: Content med bg-secondary og hover på billeder-->
+<!-- Spis & Drik start -->
 <section class="bg-primary py-5">
   <div class="container">
-    <!-- Overskrift -->
     <div class="row">
       <div class="col-12 text-center mb-4">
         <h4 class="text-white">UDFORSK SPIS & DRIK</h4>
       </div>
     </div>
-
     <div class="row gx-4 gy-4">
-
       <!-- News Block 1 -->
       <div class="col-12 col-md-6 col-lg-3">
-        <div class=" shadow-1-strong rounded-5 p-3 news-block">
+        <div class="shadow-1-strong rounded-5 p-3 news-block">
           <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4">
-            <img src="images/cupss.jpeg" class="img-fluid hover-zoom" />
-            <a href="#!">
-              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-            </a>
+            <img src="images/cupss.jpeg" class="img-fluid hover-zoom"  alt="cups&cones"/>
+            <a href="#!"><div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div></a>
           </div>
           <div class="row mb-3">
             <div class="col-6">
@@ -300,7 +246,7 @@
             <div class="col-6 text-end"></div>
           </div>
           <a href="" class="text-white">
-            <h5>Cafe Cups `n cones</h5>
+            <h5>Cafe Cups'n cones</h5>
             <p>Her kan du nyde alt fra frisksmurte sandwich og salater til Bubble Waffles, milkshakes og bubble tea.</p>
           </a>
         </div>
@@ -308,9 +254,9 @@
 
       <!-- News Block 2 -->
       <div class="col-12 col-md-6 col-lg-3">
-        <div class=" shadow-1-strong rounded-5 p-3 news-block">
+        <div class="shadow-1-strong rounded-5 p-3 news-block">
           <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4">
-            <img src="images/kon.jpg" class="img-fluid hover-zoom" />
+            <img src="images/kon.jpg" class="img-fluid hover-zoom"  alt="Konditoriet"/>
             <a href="#!"><div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div></a>
           </div>
           <div class="row mb-3">
@@ -330,7 +276,7 @@
       <div class="col-12 col-md-6 col-lg-3">
         <div class="shadow-1-strong rounded-5 p-3 news-block">
           <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4">
-            <img src="images/faf.jpg" class="img-fluid hover-zoom" />
+            <img src="images/faf.jpg" class="img-fluid hover-zoom"  alt="Keramik værksted"/>
             <a href="#!"><div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div></a>
           </div>
           <div class="row mb-3">
@@ -341,7 +287,7 @@
           </div>
           <a href="" class="text-white">
             <h5>Fafla Mikroværksted</h5>
-            <p> Hos Fafla Mikroværksted i Køge kan du nyde kaffe, te, sodavand og lidt sødt, og endda kombinere det med kreativ hygge.</p>
+            <p>Hos Fafla Mikroværksted i Køge kan du nyde kaffe, te, sodavand og lidt sødt, og endda kombinere det med kreativ hygge.</p>
           </a>
         </div>
       </div>
@@ -350,7 +296,7 @@
       <div class="col-12 col-md-6 col-lg-3">
         <div class="shadow-1-strong rounded-5 p-3 news-block">
           <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4">
-            <img src="images/lol.jpeg" class="img-fluid hover-zoom" />
+            <img src="images/lol.jpeg" class="img-fluid hover-zoom"  alt="Lolipop slikbutik"/>
             <a href="#!"><div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div></a>
           </div>
           <div class="row mb-3">
@@ -369,466 +315,101 @@
     </div>
   </div>
 </section>
+<!-- Spis & Drik slut -->
 
-
-
-
-
+<!-- Restauranter anbefalinger start -->
 <section class="py-5">
   <div class="container">
-
-    <!-- Overskrift -->
-    <h2 class="text-center fw-bold mb-5">RESTAURANTER VI ANBEFALER</h2>
-
-    <div class="row justify-content-center">
-
-      <!-- Restaurant 1 -->
+    <h2 class="text-center fw-bold mb-5 text-secondary">RESTAURANTER VI ANBEFALER</h2>
+    <div class="row justify-content-center text-center">
       <div class="col-12 col-md-6 mb-4">
-        <a href="restaurant1.html" class="text-decoration-none text-dark">
-          <div class="card border-0 shadow-sm">
-            <img src="images/flammen.jpg" class="card-img-top" alt="Restaurant 1"
-                 style="height: 300px; object-fit: cover;">
-            <div class="card-body text-center">
-              <h4 class="fw-bold">Restaurant Flammen</h4>
-              <p class="mb-0">Stor grillbuffet, hyggelig stemning og noget for hele familien.</p>
-            </div>
-          </div>
+        <a href="https://restaurant-flammen.dk/" class="d-inline-block">
+          <img src="images/Flammen.svg" alt="Restaurant Flammen Logo" style="width: 600px; height: auto;">
         </a>
       </div>
-
-      <!-- Restaurant 2 -->
       <div class="col-12 col-md-6 mb-4">
-        <a href="restaurant2.html" class="text-decoration-none text-dark">
-          <div class="card border-0 shadow-sm">
-            <img src="images/diner.jpg" class="card-img-top" alt="Restaurant 2"
-                 style="height: 300px; object-fit: cover;">
-            <div class="card-body text-center">
-              <h4 class="fw-bold">Stacy's Diner</h4>
-              <p class="mb-0">Hyggelig diner med sandwich, burgere, brunch og børnevenlige retter.</p>
-            </div>
-          </div>
+        <a href="https://stacysdiner.dk/" class="d-inline-block">
+          <img src="images/Stacies.svg" alt="Stacy's Diner Logo" style="width: 600px; height: auto;">
         </a>
       </div>
-
     </div>
   </div>
 </section>
+<!-- Restauranter anbefalinger slut -->
 
+<!-- Praktisk Information start -->
+<section class="bg-light py-5">
+  <div class="container">
+    <div class="row gx-lg-5">
+      <!-- Overskrift -->
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <h4 class="text-secondary fw-bold">PRAKTISK INFORMATION</h4>
+        </div>
+      </div>
 
-
-<!--Main layout-->
-<div class="container">
-  <!--Section: News of the day-->
-  <section class="border-bottom pb-4 mb-5 mt-5">
-    <div class="row gx-5">
-      <div class="col-md-6 mb-4">
-        <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
-          <img src="https://mdbcdn.b-cdn.net/img/new/slides/080.webp" class="img-fluid" />
+      <!-- Parkering -->
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4">
+          <img src="images/parkering.jpg" class="img-fluid w-100" style="height: 250px; object-fit: cover;" alt="parkering">
           <a href="#!">
             <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
           </a>
         </div>
+        <a href="" class="text-dark">
+          <h5>Parkering i Køge</h5>
+          <p>Gør besøget nemmere med et hurtigt overblik over byens parkeringsmuligheder. Find de nærmeste pladser, gratis tider og parkeringsområder.</p>
+        </a>
       </div>
 
-      <div class="col-md-6 mb-4">
-        <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">News of the day</span>
-        <h4><strong>Facilis consequatur eligendi</strong></h4>
-        <p class="text-muted">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
-          eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
-          sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis.
-        </p>
-        <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary">Read more</button>
-      </div>
-    </div>
-  </section>
-  <!--Section: News of the day-->
-
-  <!--Section: Content-->
-  <section>
-    <div class="row gx-lg-5">
-      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-        <!-- News block -->
-        <div>
-          <!-- Featured image -->
-          <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4"
-               data-mdb-ripple-color="light">
-            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp" class="img-fluid" />
-            <a href="#!">
-              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-            </a>
-          </div>
-
-          <!-- Article data -->
-          <div class="row mb-3">
-            <div class="col-6">
-              <a href="" class="text-info">
-                <i class="fas fa-plane"></i>
-                Travels
-              </a>
-            </div>
-
-            <div class="col-6 text-end">
-              <u> 15.07.2020</u>
-            </div>
-          </div>
-
-          <!-- Article title and description -->
-          <a href="" class="text-dark">
-            <h5>This is title of the news</h5>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iste aliquid. Sed
-              id nihil magni, sint vero provident esse numquam perferendis ducimus dicta
-              adipisci iusto nam temporibus modi animi laboriosam?
-            </p>
-          </a>
-
-          <hr />
-
-
-          <!-- News -->
-          <a href="" class="text-dark d-none">
-            <div class="row mb-4 border-bottom pb-2">
-              <div class="col-3">
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp"
-                     class="img-fluid shadow-1-strong rounded" alt="Skyscrapers" />
-              </div>
-
-              <div class="col-9">
-                <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
-                <p>
-                  <u> 15.07.2020</u>
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-
+      <!-- Offentlig transport -->
       <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-        <!-- News block -->
-        <div>
-          <!-- Featured image -->
-          <div class="bg-image hover-overlay shadow-1-strong rounded-5 ripple mb-4"
-               data-mdb-ripple-color="light">
-            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/011.webp" class="img-fluid"
-                 alt="Brooklyn Bridge" />
-            <a href="#!">
-              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-            </a>
-          </div>
-
-          <!-- Article data -->
-          <div class="row mb-3">
-            <div class="col-6">
-              <a href="" class="text-danger">
-                <i class="fas fa-chart-pie"></i>
-                Business
-              </a>
-            </div>
-
-            <div class="col-6 text-end">
-              <u> 15.07.2020</u>
-            </div>
-          </div>
-
-          <!-- Article title and description -->
-          <a href="" class="text-dark">
-            <h5>This is title of the news</h5>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iste aliquid. Sed
-              id nihil magni, sint vero provident esse numquam perferendis ducimus dicta
-              adipisci iusto nam temporibus modi animi laboriosam?
-            </p>
-          </a>
-
-          <hr />
-
-
-          <!-- News -->
-          <a href="" class="text-dark d-none">
-            <div class="row mb-4 border-bottom pb-2">
-              <div class="col-3">
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/034.webp"
-                     class="img-fluid shadow-1-strong rounded" alt="Times Square" />
-              </div>
-
-              <div class="col-9">
-                <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
-                <p>
-                  <u> 15.07.2020</u>
-                </p>
-              </div>
-            </div>
+        <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4">
+          <img src="images/bus.jpg" class="img-fluid w-100" style="height: 250px; object-fit: cover;" alt="Bus">
+          <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
           </a>
         </div>
-        <!-- News block -->
+        <a href="" class="text-dark">
+          <h5>Offentlig transport i Køge</h5>
+          <p>Her finder I nemt information om busser, tog og ruter i og omkring Køge. Perfekt til familier, der vil komme hurtigt og trygt rundt i byen.</p>
+        </a>
       </div>
 
+      <!-- Åbningstider -->
       <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-        <!-- News block -->
-        <div>
-          <!-- Featured image -->
-          <div class="bg-image hover-overlay shadow-1-strong rounded-5 ripple mb-4"
-               data-mdb-ripple-color="light">
-            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/018.webp" class="img-fluid"
-                 alt="Golden Gate National Recreation Area" />
-            <a href="#!">
-              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-            </a>
-          </div>
-
-          <!-- Article data -->
-          <div class="row mb-3">
-            <div class="col-6">
-              <a href="" class="text-warning">
-                <i class="fas fa-code"></i>
-                Technology
-              </a>
-            </div>
-
-            <div class="col-6 text-end">
-              <u> 15.07.2020</u>
-            </div>
-          </div>
-
-          <!-- Article title and description -->
-          <a href="" class="text-dark">
-            <h5>This is title of the news</h5>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iste aliquid. Sed
-              id nihil magni, sint vero provident esse numquam perferendis ducimus dicta
-              adipisci iusto nam temporibus modi animi laboriosam?
-            </p>
-          </a>
-
-          <hr />
-        </div>
-      </div>
-  </section>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--Section: Content-->
-<section>
-  <div class="container">
-    <div class="row gx-4 gy-4">
-
-      <!-- News Block 1 -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="bg-white shadow-1-strong rounded-5 p-3">
-          <!-- Featured image -->
-          <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4" data-mdb-ripple-color="light">
-            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp" class="img-fluid" />
-            <a href="#!">
-              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-            </a>
-          </div>
-          <!-- Article data -->
-          <div class="row mb-3">
-            <div class="col-6">
-              <a href="" class="text-info"><i class="fas fa-plane"></i> Travels</a>
-            </div>
-            <div class="col-6 text-end"></div>
-          </div>
-          <!-- Article title and description -->
-          <a href="" class="text-dark">
-            <h5>News Title 1</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iste aliquid...</p>
+        <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4">
+          <img src="images/open.jpg" class="img-fluid w-100" style="height: 250px; object-fit: cover;" alt="Åbningstider">
+          <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
           </a>
         </div>
-      </div>
-
-      <!-- News Block 2 -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="bg-white shadow-1-strong rounded-5 p-3">
-          <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4" data-mdb-ripple-color="light">
-            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/114.webp" class="img-fluid" />
-            <a href="#!"><div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div></a>
-          </div>
-          <div class="row mb-3">
-            <div class="col-6">
-              <a href="" class="text-info"><i class="fas fa-plane"></i> Travels</a>
-            </div>
-            <div class="col-6 text-end"></div>
-          </div>
-          <a href="" class="text-dark">
-            <h5>News Title 2</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iste aliquid...</p>
-          </a>
-        </div>
-      </div>
-
-      <!-- News Block 3 -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="bg-white shadow-1-strong rounded-5 p-3">
-          <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4" data-mdb-ripple-color="light">
-            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp" class="img-fluid" />
-            <a href="#!"><div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div></a>
-          </div>
-          <div class="row mb-3">
-            <div class="col-6">
-              <a href="" class="text-info"><i class="fas fa-plane"></i> Travels</a>
-            </div>
-            <div class="col-6 text-end"></div>
-          </div>
-          <a href="" class="text-dark">
-            <h5>News Title 3</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iste aliquid...</p>
-          </a>
-        </div>
-      </div>
-
-      <!-- News Block 4 -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="bg-white shadow-1-strong rounded-5 p-3">
-          <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4" data-mdb-ripple-color="light">
-            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp" class="img-fluid" />
-            <a href="#!"><div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div></a>
-          </div>
-          <div class="row mb-3">
-            <div class="col-6">
-              <a href="" class="text-info"><i class="fas fa-plane"></i> Travels</a>
-            </div>
-            <div class="col-6 text-end"></div>
-          </div>
-          <a href="" class="text-dark">
-            <h5>News Title 4</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iste aliquid...</p>
-          </a>
-        </div>
+        <a href="" class="text-dark">
+          <h5>Åbningstider i Køge</h5>
+          <p>Få styr på åbningstiderne for butikker, caféer og oplevelser i byen. Så kan I planlægge dagen uden stress – og få mest muligt ud af jeres tur.</p>
+        </a>
       </div>
 
     </div>
   </div>
 </section>
+<!-- Praktisk Information slut -->
 
 
 
 
 
 
-
-
-
-
-
-
-<!--Section: Content med bg-secondary og hover-effekt-->
-<section class="bg-primary  mb-5 py-5">
-  <div class="container">
-    <div class="row gx-4 gy-4">
-
-      <!-- News Block 1 -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="news-block  shadow-1-strong rounded-5 p-3">
-          <div class="bg-image mb-4">
-            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp" class="img-fluid" />
-            <div class="mask"></div>
-          </div>
-          <div class="row mb-3">
-            <div class="col-6"><a href="" class="text-info"><i class="fas fa-plane"></i> Travels</a></div>
-            <div class="col-6 text-end"></div>
-          </div>
-          <a href="" class="text-dark">
-            <h5>News Title 1</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-          </a>
-        </div>
-      </div>
-
-      <!-- News Block 2 -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="news-block shadow-1-strong rounded-5 p-3">
-          <div class="bg-image mb-4">
-            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/114.webp" class="img-fluid" />
-            <div class="mask"></div>
-          </div>
-          <div class="row mb-3">
-            <div class="col-6"><a href="" class="text-info"><i class="fas fa-plane"></i> Travels</a></div>
-            <div class="col-6 text-end"></div>
-          </div>
-          <a href="" class="text-dark">
-            <h5>News Title 2</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-          </a>
-        </div>
-      </div>
-
-      <!-- News Block 3 -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="news-block  shadow-1-strong rounded-5 p-3">
-          <div class="bg-image mb-4">
-            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp" class="img-fluid" />
-            <div class="mask"></div>
-          </div>
-          <div class="row mb-3">
-            <div class="col-6"><a href="" class="text-info"><i class="fas fa-plane"></i> Travels</a></div>
-            <div class="col-6 text-end"></div>
-          </div>
-          <a href="" class="text-dark">
-            <h5>News Title 3</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-          </a>
-        </div>
-      </div>
-
-      <!-- News Block 4 -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="news-block shadow-1-strong rounded-5 p-3">
-          <div class="bg-image mb-4">
-            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp" class="img-fluid" />
-            <div class="mask"></div>
-          </div>
-          <div class="row mb-3">
-
-            <div class="col-6"><a href="" class="text-secondary-custom"><i class="fas fa-plane"></i> Travels</a></div>
-            <div class="col-6 text-end"></div>
-          </div>
-          <a href="" class="text-dark">
-            <h5>News Title 4</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
+<!-- Footer start -->
 <footer class="gradient-footer bg-primary text-white py-5">
   <div class="container">
     <div class="row g-4">
-      <!-- Company Info -->
+
+      <!-- Om os -->
       <div class="col-lg-4">
         <h5 class="fw-bold mb-3">OM OS</h5>
         <p class="opacity-75">
-          Vi hjælper børnefamilier med at finde rundt i Køge på en nem og overskuelig måde.
-          Her samler vi praktisk information om parkering, transport og oplevelser, så I hurtigt kan komme godt afsted.
+          Vi hjælper børnefamilier med at finde rundt i Køge på en nem og overskuelig måde...
         </p>
         <div class="col-md-6 d-flex justify-content-center justify-content-md-end gap-3 mt-n2">
           <a href="#" class="text-white fs-4"><i class="fab fa-instagram"></i></a>
@@ -836,7 +417,7 @@
         </div>
       </div>
 
-      <!-- Quick Links -->
+      <!-- Genveje -->
       <div class="col-lg-2 col-md-4">
         <h6 class="fw-bold mb-3">GENVEJE</h6>
         <ul class="list-unstyled">
@@ -847,32 +428,31 @@
         </ul>
       </div>
 
-      <!-- Newsletter -->
+      <!-- Nyhedsbrev -->
       <div class="col-lg-4 text-center text-lg-start">
-        <!-- Logo over nyhedsbrevet -->
         <img src="images/LOGO.png" alt="Oplev Køge" width="150" class="mb-3">
-
         <h6 class="fw-bold mb-3">TILMELD DIG NYHEDSBREVET</h6>
-
         <div class="input-group mt-3">
           <input type="email" class="form-control newsletter-input" placeholder="E-mail">
           <button class="btn btn-light px-4" type="button">TILMELD</button>
-
         </div>
       </div>
+
     </div>
 
     <hr class="my-4 opacity-25">
 
     <!-- Copyright -->
     <div class="row align-items-center">
-     <div class="col-12 text-center mb-3 mb-md-0">
+      <div class="col-12 text-center mb-3 mb-md-0">
         <small class="opacity-75">© 2025 Oplev Køge. All rights reserved.</small>
       </div>
     </div>
   </div>
 </footer>
+<!-- Footer slut -->
 
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
