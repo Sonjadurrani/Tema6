@@ -19,15 +19,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "bootstrapComponents";
 
-
-
-
-
-
-
-
-
-
 .megamenu {
   position: static;
 }
@@ -165,30 +156,4 @@ p{
 .news-block:hover .bg-image img {
   transform: scale(1.05);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
