@@ -12,24 +12,72 @@ $secondary: #4D5763;
 
 // 4. Include any default map overrides here
 $custom-colors: (
-        "farve": $cyan-400,
+	"farve": $cyan-400,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "bootstrapComponents";
 
+// 5. Du kan lave styling her...
+
+
+.news-block {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.news-block .bg-image {
+  position: relative;
+}
+
+.news-block .bg-image img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.news-block:hover .bg-image img {
+  transform: scale(1.05);
+}
+
+.news-block .mask {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(var(--bs-secondary-rgb), 0.15);
+  transition: background-color 0.3s ease;
+}
+
+.news-block:hover .mask {
+  background-color: rgba(var(--bs-secondary-rgb), 0.25);
+}
+
+.bg-image img.hover-zoom {
+  transition: transform 0.35s ease;
+}
+
+.bg-image:hover img.hover-zoom {
+  transform: scale(1.05);
+}
 
 
 
 
-
-
-
+h5 {
+  font-family: "Archivo-black", sans-serif;
+  font-weight: bold;
 :root {
   --bs-primary: #a9c4d6; /* din primary-farve */
 }
 
+p {
+  font-family: "Inter", serif;
 .custom-primary-btn {
   background-color: var(--bs-primary) !important;
   border-color: var(--bs-primary) !important;
@@ -38,6 +86,23 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   border-radius: 25px; /* gør den rund som på billedet */
   font-weight: 600;
 }
+
+
+
+.boxtekst {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400; /* Archivo Black har kun én vægt */
+  color: white;
+  text-align: center; /* hvis du vil centrere teksten */
+}
+
+.box{
+  font-family: "Archivo Black", sans-serif;
+
+}
+
+
+
 
 
 .megamenu {
@@ -148,6 +213,12 @@ p{
   font-family: "Archivo Black", sans-serif !important;
 }
 
+/* Brug et unikt container-navn */
+.parking-container {
+  max-width: 900px;   /* Maks bredde på sektionen */
+  width: 90%;         /* Bredden på små skærme */
+  margin: 0 auto 60px auto;  /* Centrer container og afstand nedenfor */
+  padding: 0 15px;    /* Lidt padding for små skærme */
 /* Nyheder - hover effekt på billeder uden border-radius */
 .news-block {
   position: relative;
@@ -155,20 +226,36 @@ p{
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.text {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 0 70px 0;  /* Korrigeret margin */
 .news-block:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 25px rgba(0,0,0,0.2);
 }
 
+/* Map container */
+.map-container {
+  width: 100%;
+  height: 550px;
+  border-radius: 8px;
 /* Billeder */
 .news-block .bg-image {
   position: relative;
   overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   border-radius: 0 !important; /* fjerner alle hjørner */
 }
 
+/* Responsivt iframe */
+.map-container iframe {
 .news-block .bg-image img {
   width: 100%;
+  height: 100%;
+  border: none;
   display: block;
   transition: transform 0.3s ease;
   border-radius: 0 !important; /* fjerner evt. rounding på selve img */
@@ -193,11 +280,20 @@ p{
 
 
 
+
+.title {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 48px;
+  color: #4D5763;
 /* Sørger for, at billederne ikke zoomer */
 .card-img-top {
   transition: all 0.3s ease;
 }
 
+.subtitle {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 26px;
+  color: #4D5763;
 /* Tilføj overlay container */
 .card:hover::after {
   content: "\f061"; /* Font Awesome pil (skal have font-awesome inkluderet) */
@@ -226,11 +322,31 @@ p{
   z-index: 1;
 }
 
+
+
+
+
+
+
+
+/* Responsiv */
+@media (max-width: 600px) {
+  .title {
+    font-size: 28px;
+  }
+
 .match-btn {
   margin-top: 1rem;      /* samme afstand som i card-body */
   border-radius: .375rem; /* Bootstrap standard (samme som i kortet) */
 }
 
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .map-wrapper iframe {
+    height: 350px;
+  }
 
 .btn {
   border-radius: 0.375rem !important;
